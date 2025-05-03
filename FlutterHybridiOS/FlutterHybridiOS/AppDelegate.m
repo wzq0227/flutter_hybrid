@@ -16,6 +16,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //FlutterEngine初始化
+    self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
+    [self.flutterEngine runWithEntrypoint:nil];
     return YES;
 }
 
