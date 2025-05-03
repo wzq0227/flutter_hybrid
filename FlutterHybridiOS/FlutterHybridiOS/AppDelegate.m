@@ -19,9 +19,21 @@
     //FlutterEngine初始化
     self.flutterEngine = [[FlutterEngine alloc] initWithName:@"io.flutter" project:nil];
     [self.flutterEngine runWithEntrypoint:nil];
+    // 触发网络权限请求
+    [self requestNetworkPermission];
     return YES;
 }
 
+- (void)requestNetworkPermission {
+    // 创建一个简单的请求来触发权限对话框
+    NSURL *url = [NSURL URLWithString:@"https://www.baidu.com"];
+    if (url) {
+        NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+            // 这里不需要处理响应，只是为了触发权限对话框
+        }];
+        [task resume];
+    }
+}
 
 #pragma mark - UISceneSession lifecycle
 
