@@ -7,7 +7,25 @@
 		<key>FlutterHybridiOS.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>9</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>04284E302DC4E5EA001D415E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04284E4B2DC4E5EB001D415E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>04284E552DC4E5EB001D415E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

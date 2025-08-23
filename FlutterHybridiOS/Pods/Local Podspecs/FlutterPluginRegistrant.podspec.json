@@ -28,6 +28,12 @@
   "dependencies": {
     "Flutter": [
 
+    ],
+    "path_provider_foundation": [
+
+    ],
+    "saver_gallery": [
+
     ]
   }
 }
